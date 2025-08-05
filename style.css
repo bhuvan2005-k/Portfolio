@@ -1,0 +1,224 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+main {
+    padding-top: 60px;
+}
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 222px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00bcd4;
+}
+
+.social-links a {
+    color: #f4f4f4;
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #00bcd4;
+}
+/* Style for the Download CV button */
+
+.btn {
+
+display: inline-block;
+ margin-top: 20px;
+
+padding: 12px 25px;
+
+background-color: #00bcd4;
+
+color: #1a1a1a;
+
+text-decoration: none;
+
+border-radius: 5px;
+
+font-weight: bold;
+
+transition: background-color 0.3s ease;
+
+}
+
+/* Hover effect for the button */
+
+.btn:hover {
+
+background-color: #008c9e;
+
+}
+#skills h3 {
+    color: #00bcd4;
+    margin-top: 30px;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 5px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.skill-item {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.education-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    margin-top: 0;
+    color: #00bcd4;
+}
+
+.education-item p {
+    margin: 5px 0;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+#contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00bcd4;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #008c9e;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+}

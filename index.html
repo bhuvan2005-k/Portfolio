@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Bhuvaneshwari K</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about-content">
+                <div class="profile-pic">
+                    <img src="images\A_girl.jpeg" alt="Your Profile Picture">
+                </div>
+                <div class="about-text">
+                    <h1>Hi, I'm Bhuvan! 👋</h1>
+                    <p>
+I am passionate fresher with a strong interest in web development. I'm eager to learn and contribute to a team. My technical skills include proficiency in Java and Python for back-end development, along with HTML, CSS, and JavaScript for creating interactive websites. I also have hands-on experience with MySQL for managing data. I am dedicated to applying my skills to real-world challenges and growing as a developer.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/bhuvan2005-k" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/bhuvaneshwari-k-624428258" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://leetcode.com/u/LLs0iGGQEQ/" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        <a href="mailto:bhuvaneshwari1420@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="Resume_update (1).pdf" download class="btn">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>B.E</h3>
+                <p>RP Sarathy Institute of Technology</p>
+                <p>2022 - 2026</p>
+                <p>CGPA : 8.46</p>
+            </div>
+            <div class="education-item">
+                <h3>H.S.C</h3>
+                <p>Kalaimagal Matric Higher Secondary School</p>
+                <p>2021 - 2022</p>
+                <p>Percentage : 83.3%</p>
+            </div>
+              <div class="education-item">
+                <h3>S.S.L.C</h3>
+                <p>Fatima Girls Higher Secondary School</p>
+                <p>2019 - 2020</p>
+                <p>Percentage : 73.8%</p>
+            </div>
+        </section>
+        <section id="skills">
+    <h2>Skills</h2>
+    
+    <h3>Programming Languages</h3>
+    <div class="skills-grid">
+        <div class="skill-item">Java</div>
+        <div class="skill-item">Python</div>
+    </div>
+    
+    <h3>Front-End</h3>
+    <div class="skills-grid">
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+    </div>
+    
+    <h3>Database</h3>
+    <div class="skills-grid">
+        <div class="skill-item">MySQL</div>
+    </div>
+    
+    <h3>Tools & Others</h3>
+    <div class="skills-grid">
+        <div class="skill-item">Git</div>
+        <div class="skill-item">github</div>
+        <div class="skill-item">VS Code</div>
+
+    </div>
+</section>
+     <section id="projects">
+            <h2>Projects</h2>
+               <div class="project-card">
+               <h3>ATM System</h3>
+                <p> Developed a console-based ATM system using Java, featuring user authentication and core banking functionalities
+                     like balance checking, deposits, and withdrawals. The project applied Object-Oriented Programming (OOP) principles 
+                     to model user accounts and transactions effectively. It used File I/O for data persistence, ensuring account 
+                     information was securely stored. The system also included robust error handling to manage invalid inputs and critical
+                     edge cases like insufficient balance and incorrect PINs. </p>
+                <a href="https://github.com/bhuvan2005-k/ATM_System" target="_blank">View on GitHub</a>
+
+                <h3>Currency Converter</h3>
+                <p>A responsive currency converter built using Python (Flask) and HTML.
+                  It allows users to convert amounts between different currencies using real-time exchange rates from the ExchangeRate API.
+                    The app features a simple UI where users can select base and target currencies and enter the amount to convert.
+                    Backend logic processes user input, fetches data from the API, and returns the converted value instantly.
+                    This project demonstrates skills in Flask, API integration, and basic web development. </p>
+                <a href="https://github.com/bhuvan2005-k/Currency_Converter" target="_blank">View on GitHub</a>
+
+                <h3>Student </h3>
+                <p>A Flask-based web application for managing student records, attendance, and internal messaging.
+                    Built with Python, SQLite, and HTML templates, it supports adding, updating, soft-deleting, and searching student data.
+                    Tracks attendance per student and maintains message history with timestamps.
+                    Implements soft delete, form validation, and dynamic data rendering with Jinja2.
+                    Demonstrates skills in Flask, SQLAlchemy, CRUD operations, and full-stack development. </p>
+                <a href="https://github.com/bhuvan2005-k/Student_management_system" target="_blank">View on GitHub</a>
+                        
+                        
+                
+            </div>
+        </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bhuvan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
