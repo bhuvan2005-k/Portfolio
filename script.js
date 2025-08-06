@@ -1,3 +1,4 @@
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,10 +9,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-document.getElementById('contact-form').addEventListener('submit', function(e) {
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
     e.preventDefault();
-    alert('Thank you for your message! I will get back to you soon.');
-    // Here you would typically send the form data to a backend server.
-    // For this example, we'll just show an alert.
-    this.reset();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            alert('Thank you for your message! I will get back to you soon.');
+            form.reset();
+        } else {
+            alert('Oops! Something went wrong. Please try again.');
+        }
+    } catch (error) {
+        alert('Error submitting the form. Please check your internet connection or try later.');
+        console.error(error);
+    }
 });
